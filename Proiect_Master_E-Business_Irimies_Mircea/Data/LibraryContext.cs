@@ -17,6 +17,7 @@ base(options)
         public DbSet<Antrenor> Antrenori { get; set; }
         public DbSet<Echipa> Echipe { get; set; }
         public DbSet<Divizie> Divizii { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Jucator>().ToTable("Jucator");
